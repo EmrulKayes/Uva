@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstdio>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    int t,n,result,result_2;
+    scanf("%d",&t);
+    while(t--)
+        {
+           scanf("%d",&n);
+
+          result=(((((n*567)/9)+7492)*235)/47)-498;
+          result_2=abs((result%100)/10);
+          cout<<result_2<<endl;
+
+
+        }
+
+        return 0;
+}
