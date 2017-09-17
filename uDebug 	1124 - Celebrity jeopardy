@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+    char Z[100];
+    while(gets(Z)){
+        puts(Z);
+    }
+    return 0;
+}
