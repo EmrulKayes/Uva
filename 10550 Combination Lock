@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main(){
+    int init_position,first,second,third,t1,t2,t3;
+    scanf("%d %d %d %d", &init_position, &first, &second, &third);
+
+    while(init_position || first || second || third)
+        {
+        if(init_position<first) t1=40-(first-init_position);
+        else t1= init_position-first;
+        if(first>second) t2=40-(first-second);
+        else t2= second-first;
+        if(second<third) t3=40-(third-second);
+        else t3=second-third;
+           cout << 360*3+(t1+t2+t3)*9 << endl;
+
+            scanf("%d %d %d %d", &init_position, &first, &second, &third);
+        }
+
+    return 0;
+}
