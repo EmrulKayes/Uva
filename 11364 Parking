@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main(){
+    int testcase,NumberOfShop,distanc,minimal_distance;
+
+
+    scanf("%d", &testcase);
+
+    while(testcase--)
+        {
+            int maximum=0,minimum=99;
+            cin>>NumberOfShop;
+            for(int i=0;i<NumberOfShop;i++)
+            {
+                scanf("%d",&distanc);
+                if(distanc<minimum) minimum=distanc;
+                if (distanc>maximum) maximum=distanc;
+            }
+
+            minimal_distance=(maximum-minimum)*2;
+
+            cout<<minimal_distance<<endl;
+
+        }
+
+        return 0;
+}
