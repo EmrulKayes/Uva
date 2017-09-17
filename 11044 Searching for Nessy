@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main(){
+    int test_case,n,m,s;
+    scanf("%d", &test_case);
+
+    while(test_case--)
+        {
+            scanf("%d %d", &n, &m);
+            s=(n/3)*(m/3);
+            cout<<s<<endl;
+
+        }
+
+    return 0;
+}
