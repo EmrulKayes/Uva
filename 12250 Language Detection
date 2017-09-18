@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstdio>
+#include<string>
+
+using namespace std;
+
+int main(){
+    int j=1;
+    string language;
+
+    for(int i=0;i<2000;i++)
+    {
+       getline(cin,language);
+       if(language=="#") break;
+       else if(language=="HELLO") cout<<"Case "<<j<<": "<<"ENGLISH"<<endl;
+       else if(language=="HOLA") cout<<"Case "<<j<<": "<<"SPANISH"<<endl;
+       else if(language=="HALLO") cout<<"Case "<<j<<": "<<"GERMAN"<<endl;
+       else if(language=="BONJOUR") cout<<"Case "<<j<<": "<<"FRENCH"<<endl;
+       else if(language=="CIAO") cout<<"Case "<<j<<": "<<"ITALIAN"<<endl;
+       else if(language=="ZDRAVSTVUJTE") cout<<"Case "<<j<<": "<<"RUSSIAN"<<endl;
+       else cout<<"Case "<<j<<": "<<"UNKNOWN"<<endl;
+       j++;
+
+    }
+
+        return 0;
+}
