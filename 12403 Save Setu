@@ -1,0 +1,33 @@
+#include <iostream>
+#include<cstdio>
+#include<string>
+
+
+
+using namespace std;
+
+int main()
+{
+    int test_case,ammount,total_money=0;
+    string str;
+
+    cin >> test_case;
+
+
+    while(test_case--)
+    {
+        cin >> str;
+        if(str=="donate")
+        {
+            cin>>ammount;
+            total_money+=ammount;
+        }
+
+        else
+        printf("%d\n",total_money);
+
+    }
+
+    return 0;
+
+}
